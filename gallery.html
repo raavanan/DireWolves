@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Gallery</title>
-	<style type="text/css">
-		.imgclass>img{
-			height:200px;
-			width:200px;
-		}
-	</style>
+	<meta charset="utf-8">
+	<title>Dire Wolves</title>
+	<link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title">
+
+	<link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 </head>
+
 <body>
 	<header>
 		<nav>
@@ -18,41 +20,69 @@
 				<li><a href="diet.html">Diet</a></li>
 				<li><a href="mating.html">Mating and reproduction</a></li>
 				<li><a href="habitat.html">Habitat</a></li>
-				<!-- <li><a href="class.html">Classification</a></li> -->
+				<li><a href="class.html">Classification</a></li>
+				<li><a href="anotomy.html">Anatomy</a></li>
+				<li><a href="behavior.html">behaviour</a></li>
 			</ul>
 		</nav>
 	</header>
-<div class="gallery">
-	<a class="imgclass" href="http://vignette3.wikia.nocookie.net/iceandfire/images/d/db/Dire-Wolf-HD-Images-1.png/revision/latest?cb=20150702002648">
-		<img src="http://vignette3.wikia.nocookie.net/iceandfire/images/d/db/Dire-Wolf-HD-Images-1.png/revision/latest?cb=20150702002648">
-	</a>
-	<h4>Sketch of Direwolf</h4>
-	<p>Life expectancy is about 6 - 8 years.</p>
-	<a class="imgclass" href="https://upload.wikimedia.org/wikipedia/commons/a/a7/Canis_dirus_Skeleton_2.jpg">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Canis_dirus_Skeleton_2.jpg">
-	</a>
-	<h4>Skeleton of Direwolf</h4>
-	<p>The direwolf became exstinct about 16000 years ago.</p>
-	<a class="imgclass" href="http://www.direwolfproject.com/data/uploads/photo_dearprudence.jpg">
-		<img src="http://www.direwolfproject.com/data/uploads/photo_dearprudence.jpg">
-	</a>
-	<h4>Biggest dog</h4>
-	<p>The biggest dog ever to walk on earth.</p>
-	<a class="imgclass" href="https://www.embracepetinsurance.com/images/pictures/direwolf.jpg?sfvrsn=2">
-		<img src="https://www.embracepetinsurance.com/images/pictures/direwolf.jpg?sfvrsn=2">
-	</a>
-	<h4>Somename</h4>
-	<p>Scietist still debate whether direwolf was a scavenger or a predator.</p>
+	<section>
+		<div id="links">
+			<a href="img/img_1.jpg" title="Banana" data-gallery>
+				<img src="img/img_1.jpg" alt="Banana">
+			</a>
+			<a href="img/wolf.gif" title="Apple" data-gallery>
+				<img src="img/wolf.gif" alt="Apple">
+			</a>
 
-	<hr />
-
-	<div>
-		<p>Upload an image</p>
-		<input type="file" name="upload_image">
-	</div>
-</div>
-<footer>
+			<a href="img/robbwolves.jpg" title="Orange" data-gallery>
+				<img src="img/robbwolves.jpg" alt="Orange">
+			</a>
+			<a href="img/pet.jpg" title="Orange" data-gallery>
+				<img src="img/pet.jpg" alt="Orange">
+			</a>
+		</div>
+	</section>
+	<footer>
 		<a href="#">dire wolf network</a>
-</footer>
+	</footer>
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery">
+		<!-- The container for the modal slides -->
+		<div class="slides"></div>
+		<!-- Controls for the borderless lightbox -->
+		<h3 class="title"></h3>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+		<!-- The modal dialog, which will be used to wrap the lightbox content -->
+		<div class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-hidden="true">&times;</button>
+						<h4 class="modal-title"></h4>
+					</div>
+					<div class="modal-body next"></div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left prev">
+							<i class="glyphicon glyphicon-chevron-left"></i> Previous
+						</button>
+						<button type="button" class="btn btn-primary next">
+							Next
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/bootstrap.min.js" charset="utf-8"></script>
 </body>
+
 </html>

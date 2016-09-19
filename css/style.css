@@ -21,9 +21,11 @@ nav ul li{
   line-height: 50px;
 }
 section{
-  height:70vh;
+  height:100vh;
+  display:inline-block;
   width:100%;
 padding:20px;
+overflow: auto;
 }
 section img{
   width:300px;
