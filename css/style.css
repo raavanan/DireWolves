@@ -35,3 +35,18 @@ footer{
   height:100px;
   background: #000;
 }
+li>a{
+  color:white;
+  padding:10px;
+}
+li>a:hover{
+  color:#ccc;
+  padding:10px;
+}
+.container {
+  padding: 0 10px 0 10px;
+}
+.heading {
+  text-align: center;
+  padding-bottom:20px;
+}
