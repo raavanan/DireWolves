@@ -1,0 +1,37 @@
+header{
+  background: url(img/wolf.jpg) center left #000s;
+  width:100%;
+  height:120px;
+
+}
+nav{
+  width:100%;
+  height:50px;
+  background: #999;
+
+}
+nav ul{
+  list-style:none;
+
+}
+nav ul li{
+  display: inline;
+  margin-left: 10px;
+  height:120px;
+  line-height: 50px;
+}
+section{
+  height:70vh;
+  width:100%;
+padding:20px;
+}
+section img{
+  width:300px;
+  float:left;
+  margin:10px;
+}
+footer{
+  width:100%;
+  height:100px;
+  background: #000;
+}
